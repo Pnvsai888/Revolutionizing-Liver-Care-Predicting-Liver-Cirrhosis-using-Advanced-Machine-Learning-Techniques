@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to LiverCare</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #6dd5ed, #2193b0);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            padding: 80px 20px 40px;
+        }
+
+        header h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+            color: #f0f0f0;
+        }
+
+        .btn-group {
+            margin-top: 30px;
+        }
+
+        .btn {
+            padding: 12px 25px;
+            margin: 0 10px;
+            font-size: 16px;
+            border-radius: 25px;
+            border: 2px solid white;
+            background-color: white;
+            color: #2193b0;
+            font-weight: bold;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: transparent;
+            color: white;
+        }
+
+        section {
+            background-color: #f7f9fc;
+            color: #333;
+            border-radius: 30px 30px 0 0;
+            padding: 60px 20px;
+            width: 100%;
+            max-width: 1200px;
+            margin-top: 40px;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        p.description {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 17px;
+            line-height: 1.7;
+            text-align: center;
+        }
+
+        img.liver-img {
+            max-width: 400px;
+            display: block;
+            margin: 30px auto;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Revolutionizing Liver Care</h1>
+        <p>Your personal assistant for early detection and awareness of liver cirrhosis.</p>
+        <div class="btn-group">
+            <a href="/predict" class="btn">Predict Now</a>
+        </div>
+    </header>
+
+    <section>
+        <h2>About Liver Cirrhosis</h2>
+        <p class="description">
+            Liver cirrhosis is a chronic condition in which healthy liver tissue is gradually replaced by scar tissue,
+            severely impacting the liver’s ability to function properly. Common causes include chronic alcohol abuse,
+            hepatitis B or C infections, and non-alcoholic fatty liver disease. If left undiagnosed, cirrhosis can lead
+            to life-threatening complications such as liver failure, internal bleeding, and liver cancer.
+        </p>
+        <img src="{{ url_for('static', filename='img/liver-cirrhosis-diagram.jpeg') }}" alt="Liver Cirrhosis Diagram"
+            class="liver-img">
+
+    </section>
+
+</body>
+
+</html>
